@@ -1,4 +1,4 @@
-
+BIN = $(GOBIN)/gf
 pack: pack.template-single pack.template-mono
 
 pack.template-single:
@@ -16,3 +16,8 @@ pack.template-mono:
 	@rm -fr temp/template-mono/.git
 	@cd temp && gf pack template-mono ../internal/packed/template-mono.go -n=packed -y
 	@rm -fr temp
+
+build:
+	go mod tidy
+	go build  -o $(BIN) ./gf/main.go
+	file $(GOBIN)/gf
