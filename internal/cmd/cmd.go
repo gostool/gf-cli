@@ -22,7 +22,7 @@ type cGF struct {
 const (
 	cGFAd = `
 ADDITIONAL
-    Use "gf COMMAND -h" for details about a command.
+    Use "gf COMMAND -h" for details about a command v2.
 `
 )
 
