@@ -1,3 +1,5 @@
+# export GOBIN=$GOPATH/pkg/mod/bin
+# export GOBIN=$GOPATH/bin
 BIN = $(GOBIN)/gf
 pack: pack.template-single pack.template-mono
 
